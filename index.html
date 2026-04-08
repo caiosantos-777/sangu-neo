@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>ONG ADUA</title>
+    <title>Doação</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -18,60 +19,53 @@
     <main>
 
         <div class="form1">
-            <form>
-
-                <label for="Nome"></label>Nome Completo: </label>
-                <input type="text" name=Nome />
+            <form id="meuFormulario">
+                <label for="Nome">Nome Completo:</label>
+                <input type="text" id="Nome" name="Nome" />
                 <hr>
 
-                <label for="Telefone"></label>Telefone: </label>
-                <input type="tell" name=Telefone />
+                <label for="Telefone">Telefone:</label>
+                <input type="tel" id="Telefone" name="Telefone" />
                 <hr>
 
-                <label for="Peso"></label>Peso: </label>
-                <input type="number" name=Peso />
+                <label for="Peso">Peso (kg):</label>
+                <input type="number" id="Peso" name="Peso" />
                 <hr>
 
-                <label for="Idade"></label>Idade: </label>
-                <input type="text" name=Idade />
+                <label for="Idade">Idade:</label>
+                <input type="number" id="Idade" name="Idade" />
                 <hr>
 
-                <label for="estado"></label>Estado</label>
-                <input type="text" name=Estado />
+                <label for="Estado">Estado:</label>
+                <input type="text" id="Estado" name="Estado" />
                 <hr>
 
-                <label for="Cdd"></label>Cidade: </label>
-                <input type="text" name=Cdd />
+                <label for="Cdd">Cidade:</label>
+                <input type="text" id="Cdd" name="Cdd" />
                 <hr>
 
-                <label for="TPS">Tipo Sanguíneo</label>
+                <label for="TPS">Tipo Sanguíneo:</label>
                 <select id="TPS">
-                    <option value="Escolha">Escolha</option>
-                    <option value="A">A-</option>
-                    <option value="B">B-</option>
-                    <option value="A">A+</option>
-                    <option value="B">B+</option>
-                    <option value="AB">AB+</option>
-                    <option value="AB">AB-</option>
-                    <option value="O">O+</option>
-                    <option value="O">O-</option>
-                    
+                    <option value="">Escolha</option>
+                    <option value="A-">A-</option>
+                    <option value="B-">B-</option>
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
                 </select>
                 <hr>
 
-                <label for="Email"></label>Email: </label>
-                <input type="text" name=Email />
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" />
                 <hr>
 
-
-                <button type="submit" onclick="validarFormulario()">ENVIAR</button>
-
-
-
-
-
+                <button type="submit">ENVIAR</button>
             </form>
 
+           
         </div>
 
     </main>
